@@ -1,3 +1,5 @@
+# Simple Stack Data Stucture made using python
+
 class Stack(object):
     def __init__(self, limit = 10):
         self.stack = []
