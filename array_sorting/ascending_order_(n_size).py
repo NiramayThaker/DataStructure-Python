@@ -12,4 +12,4 @@ for i in range(0, array_size):
             num[i], num[j] = num[j], num[i]
             print(num)
 
-print(f"\nFinal sorted array in Acending Order:\n{num}\n")
+print(f"\nFinal sorted array in Ascending Order:\n{num}\n")
