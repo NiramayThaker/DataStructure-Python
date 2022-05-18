@@ -16,7 +16,6 @@ class DoublyLinkedList:
             self.head.prev = node
             self.head = node
 
-
     def printLL(self):
         itr = self.head
         
