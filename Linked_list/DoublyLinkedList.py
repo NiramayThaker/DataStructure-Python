@@ -17,25 +17,27 @@ class DoublyLinkedList:
             self.head = node
 
     def printLL(self):
-        itr = self.head
+        itr = self.head  
         
         while itr:
             print(f"{itr.data} --> ", end='')   
             itr = itr.next
+            
         print()
 
-    def printLLRev(self):
-        
+    def printLLRev(self):      
         itr = self.head
-        while itr.next:
-            itr = itr.next
         
+        while itr.next:
+            itr = itr.next 
+          
         while itr:
             print(f"{itr.data} <-- ", end='')
             itr = itr.prev
+            
         print()
 
-
+        
 if __name__ == '__main__':
     dll = DoublyLinkedList()
     
