@@ -24,7 +24,6 @@ class DoublyLinkedList:
             itr = itr.next
         print()
 
-
     def printLLRev(self):
         
         itr = self.head
