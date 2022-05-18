@@ -27,7 +27,6 @@ class DoublyLinkedList:
     def printLLRev(self):
         
         itr = self.head
-
         while itr.next:
             itr = itr.next
         
