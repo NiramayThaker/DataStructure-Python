@@ -30,7 +30,6 @@ class TreeNode:
 def built_product():
     root = TreeNode("Electronics")
 
-
     laptop = TreeNode("Laptop")
 
     MacBook = TreeNode("MacBook")
@@ -50,7 +49,6 @@ def built_product():
     phone.addChild(iphone)
     phone.addChild(samsung)
     phone.addChild(nokia)
-
 
     root.addChild(laptop)
     root.addChild(phone)
