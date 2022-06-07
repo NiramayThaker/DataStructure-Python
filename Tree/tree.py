@@ -32,7 +32,6 @@ def built_product():
 
 
     laptop = TreeNode("Laptop")
-    # laptop.parent = root
 
     MacBook = TreeNode("MacBook")
     asus = TreeNode("Asus")
@@ -42,9 +41,7 @@ def built_product():
     laptop.addChild(asus)
     laptop.addChild(hp)
 
-
     phone = TreeNode("Phone")
-    # phone.parent = root
 
     iphone = TreeNode("Iphone")
     samsung = TreeNode("Samsung")
@@ -59,7 +56,6 @@ def built_product():
     root.addChild(phone)
     
     return root
-
 
 if __name__ == '__main__':
     root = built_product()
