@@ -27,6 +27,7 @@ class TreeNode:
             p = p.parent
         return level
 
+    
 def built_product():
     root = TreeNode("Electronics")
 
@@ -54,6 +55,7 @@ def built_product():
     root.addChild(phone)
     
     return root
+
 
 if __name__ == '__main__':
     root = built_product()
