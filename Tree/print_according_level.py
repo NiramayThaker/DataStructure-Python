@@ -13,7 +13,7 @@ class TreeNode:
             return 
 
         spaces = '    ' * (self.get_level() + 1)
-        prifix = spaces + "|___"
+        prifix = spaces + "|___" if self.parent else ""
 
         print(prifix + self.data)
         if self.children:
@@ -81,3 +81,5 @@ def built_product():
 if __name__ == '__main__':
     root = built_product()
     root.print_tree(2)
+
+    print()
