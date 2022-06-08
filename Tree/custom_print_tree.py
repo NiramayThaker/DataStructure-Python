@@ -70,5 +70,3 @@ if __name__ == '__main__':
     root.print_tree("*")  # Print both name and designation 
     # root.print_tree("Name")  # Print Name
     # root.print_tree("designation") # Print designation 
-
-    print()
