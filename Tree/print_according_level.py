@@ -82,4 +82,3 @@ if __name__ == '__main__':
     root = built_product()
     root.print_tree(2)
 
-    print()
