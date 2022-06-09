@@ -18,7 +18,6 @@ class BinarySearchTreeNode:
             if self.right == None:
                 self.right = BinarySearchTreeNode(data)
                 return
-
             self.right.add_child(data)
 
     def InOrderTraversal(self):
