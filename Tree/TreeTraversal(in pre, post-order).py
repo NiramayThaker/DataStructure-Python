@@ -21,9 +21,7 @@ class BinarySearchTreeNode:
             self.right.add_child(data)
 
     def InOrderTraversal(self):
-
         elements = []
-
         if self.left:
             elements += self.left.InOrderTraversal()
 
