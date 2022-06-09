@@ -22,6 +22,7 @@ class BinarySearchTreeNode:
 
     def InOrderTraversal(self):
         elements = []
+        
         # Adding left node
         if self.left:
             elements += self.left.InOrderTraversal()
@@ -76,6 +77,7 @@ def buildTree(elements):
 if __name__ == '__main__':
     numbers = [17, 4, 1, 20, 9, 23, 18, 34]
     numbers_tree = buildTree(numbers)
+    
     print(numbers_tree.PreOrderTraversal())
     print(numbers_tree.InOrderTraversal())
     print(numbers_tree.PostOrderTraversal())
