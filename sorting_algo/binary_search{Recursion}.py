@@ -46,4 +46,3 @@ end = len(arr)
 # print(binary_search(arr, i))
 x = (binary_search_rec(arr, i, start, end))
 print(x)
-pass 
