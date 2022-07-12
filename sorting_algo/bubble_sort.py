@@ -1,3 +1,4 @@
+# For array
 def bubble_sort_array(arr):
     for j in range(len(arr) - 1):
         swapped = False
