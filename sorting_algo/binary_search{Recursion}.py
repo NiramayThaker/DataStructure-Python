@@ -18,6 +18,7 @@ def binary_search(arr, i):
 
     return False
 
+# Binary search using recursion
 def binary_search_rec(arr, i, left, right):
     if right < left:
         return -1
