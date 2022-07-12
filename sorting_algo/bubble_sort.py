@@ -1,4 +1,4 @@
-# applying on array
+# Applying on array
 def bubble_sort_array(arr):
     for j in range(len(arr) - 1):
         swapped = False
@@ -11,7 +11,7 @@ def bubble_sort_array(arr):
         if not swapped:
             break
 
-# With dictionary 
+# Applying on dictionary 
 def bubble_sort_dict(elements, key):
     for j in range(len(elements)):
      for i in range(len(elements) - 1 - j):
