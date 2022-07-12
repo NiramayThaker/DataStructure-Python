@@ -1,3 +1,4 @@
+# Noramal Binary search
 def binary_search(arr, i):
     left = 0
     right = len(arr) - 1
