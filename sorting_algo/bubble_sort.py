@@ -28,12 +28,9 @@ def bubble_sort_dict(elements, key):
 
 if __name__ == '__main__':
 #     arr = [5, 9, 2, 1, 67, 34, 88, 34]
-    
 #     bubble_sort_array(arr)
 #     print(arr)
 
-#     print()
-    
     elements = [
         { 'name': 'mona',   'transaction_amount': 1000, 'device': 'iphone-10'},
         { 'name': 'dhaval', 'transaction_amount': 400,  'device': 'google pixel'},
@@ -46,4 +43,3 @@ if __name__ == '__main__':
 
     for i in elements:
         print(i)
-
