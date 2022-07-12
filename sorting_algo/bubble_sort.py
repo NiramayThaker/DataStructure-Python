@@ -20,6 +20,7 @@ def bubble_sort_dict(elements, key):
                      elements[i][key] = elements[i + 1][key]
                      elements[i + 1][key] = temp
 
+
 if __name__ == '__main__':
     arr = [5, 9, 2, 1, 67, 34, 88, 34]
     
