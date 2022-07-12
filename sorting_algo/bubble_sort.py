@@ -11,6 +11,7 @@ def bubble_sort_array(arr):
         if not swapped:
             break
 
+# With dictionary 
 def bubble_sort_dict(elements, key):
     for j in range(len(elements)):
      for i in range(len(elements) - 1 - j):
