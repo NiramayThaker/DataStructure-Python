@@ -11,14 +11,19 @@ def bubble_sort_array(arr):
         if not swapped:
             break
 
+
 # Applying on dictionary 
 def bubble_sort_dict(elements, key):
     for j in range(len(elements)):
-     for i in range(len(elements) - 1 - j):
-             if( elements[i + 1][key] < elements[i][key] ):
-                     temp = elements[i][key]
-                     elements[i][key] = elements[i + 1][key]
-                     elements[i + 1][key] = temp
+        swapped = False 
+        for i in range(len(elements) - 1 - j):
+                if( elements[i + 1][key] < elements[i][key] ):
+                        temp = elements[i][key]
+                        elements[i][key] = elements[i + 1][key]
+                        elements[i + 1][key] = temp
+                        swapped = True
+        if not swapped:
+            break
 
 
 if __name__ == '__main__':
