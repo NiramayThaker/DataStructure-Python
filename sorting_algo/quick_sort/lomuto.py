@@ -32,6 +32,5 @@ if __name__ == '__main__':
 
     start = 0
     end = len(elements) - 1
-
     quick_sort(elements, start, end)
     print(elements)
