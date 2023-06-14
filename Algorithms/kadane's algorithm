@@ -1,0 +1,12 @@
+def kadane_s(arr, n):
+    su = 0
+    maxi = arr[0]
+    
+    for val in arr:
+        su += val
+        maxi = max(su, maxi)
+        
+        if su < 0:
+            su = 0
+    
+    return maxi
