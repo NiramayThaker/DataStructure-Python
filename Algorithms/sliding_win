@@ -9,3 +9,24 @@ def sliding_win(arr, n, k):
         ans.append(curr)
         
     return ans
+
+
+# Dynamic Window
+
+def dy_win(arr, n, val):
+    s_ptr = 0
+    e_ptr = 1
+    curr_sum = 0
+    min_len = float('inf')
+    
+    while e_ptr < n:
+        curr_sum += arr[e_ptr]
+        e_ptr += 1
+        
+        while s_ptr < e_ptr and curr_sum >= val:
+            curr_sum -= arr[s_ptr]
+            s_ptr += 1
+            
+        min_len = min(min_len, e_ptr - s_ptr + 1)
+        
+    return min_len
