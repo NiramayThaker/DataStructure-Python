@@ -1,0 +1,11 @@
+def sliding_win(arr, n, k):
+    curr = sum(arr[0: k])
+    ans = [curr]
+    
+    for i in range(1, n - k + 1):
+        curr = curr - arr[i - 1]
+        curr = curr + arr[i + k - 1]
+        
+        ans.append(curr)
+        
+    return ans
