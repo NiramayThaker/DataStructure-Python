@@ -20,9 +20,11 @@ def dy_win(arr, n, val):
     min_len = float('inf')
     
     while e_ptr < n:
+        # Expanding Window from end
         curr_sum += arr[e_ptr]
         e_ptr += 1
         
+        # Shrinking Window for start
         while s_ptr < e_ptr and curr_sum >= val:
             curr_sum -= arr[s_ptr]
             s_ptr += 1
