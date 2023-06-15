@@ -12,5 +12,4 @@ def dnf(arr, n):
             e_ptr -= 1
         else:
             m_ptr += 1
-
   return arr
