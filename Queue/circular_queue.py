@@ -67,4 +67,3 @@ if __name__ == '__main__':
     
     print("rear: ", q.Rear())
     print("front: ", q.Front())
-
