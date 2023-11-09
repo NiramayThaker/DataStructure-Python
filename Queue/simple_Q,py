@@ -71,7 +71,6 @@ if __name__ == '__main__':
     q.deQueue()
     q.deQueue()
     q.show_q()    
- 
     
     q.enQueue(40)
     q.deQueue()
