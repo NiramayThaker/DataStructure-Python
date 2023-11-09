@@ -12,7 +12,7 @@ class MyQueue:
             print("Q overflow")
             return False
         
-        if self.head == -1 or self.tail == -1:
+        if self.head == -1 and self.tail == -1:
             self.head = self.tail = self.tail + 1 
 
         self.q[self.tail] = value
