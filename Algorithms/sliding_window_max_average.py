@@ -26,6 +26,8 @@ class Solution:
         max_sum = window_sum
 
         for i in range(k, len(nums)):
+            # Reusing old value instead of calculating all the values
+            # Windowm_sum = sum - 1_old_value + 1_upcoming_new_value
             window_sum = (window_sum - nums[i - k] + nums[i])
             if max_sum < window_sum:
                 max_sum = window_sum
