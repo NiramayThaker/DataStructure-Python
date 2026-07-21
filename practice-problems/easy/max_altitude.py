@@ -29,14 +29,12 @@
 
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
-        l_len = len(gain)
-        max_alt = 0
+        current = 0
+        best = 0
 
-        for i in range(l_len + 1):
-            alt = 0
-            for j in range(i):
-                alt += gain[j]
-            max_alt = max(max_alt, alt)
-        
-        return max_alt
+        for value in gain:
+            current += value
+            best = max(best, current)
 
+        return best
+                
