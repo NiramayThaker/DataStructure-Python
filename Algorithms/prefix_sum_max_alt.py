@@ -36,4 +36,3 @@ class Solution:
             best = max(best, current)
 
         return best
-                
