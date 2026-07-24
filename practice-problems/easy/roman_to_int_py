@@ -1,0 +1,42 @@
+# # Approch
+
+# 1. Create a map of Roman symbols to integer values.
+# 2. Traverse the string from left to right.
+# 3. Compare the current symbol with the next one.
+# 4. If the current value is smaller than the next, subtract it.
+# 5. Otherwise, add it.
+# 6. Return the final result.
+
+# ---
+
+# ### Time Complexity
+
+# * **O(n)** — Traverse the string once.
+
+# ### Space Complexity
+
+# * **O(1)** — The dictionary has a fixed size (7 Roman symbols), so it uses constant extra space.
+
+
+# Code
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        int_val = 0
+        roman_to_int = {
+            'I': 1, 
+            'V': 5,
+            'X': 10, 
+            'L': 50,
+            'C': 100, 
+            'D': 500, 
+            'M': 1000
+        }
+
+
+        for i in range(len(s)):
+            if i + 1 < len(s) and roman_to_int[s[i]] < roman_to_int[s[i + 1]]:
+                int_val -= roman_to_int[s[i]]
+            else:
+                int_val += roman_to_int[s[i]]
+
+        return int_val
