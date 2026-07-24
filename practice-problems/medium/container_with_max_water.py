@@ -10,6 +10,7 @@
 # * **Time Complexity:** **O(n)** — Each pointer moves at most `n` times, so the array is traversed once.
 # * **Space Complexity:** **O(1)** — Only a few extra variables are used, regardless of the input size.
 
+## MAX AREA PROBLEM
 
 # Code
 class Solution:
