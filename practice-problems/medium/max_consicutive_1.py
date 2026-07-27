@@ -47,4 +47,3 @@ class Solution:
                 l += 1
         return r - l + 1
             
-            
