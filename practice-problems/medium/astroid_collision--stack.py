@@ -1,5 +1,5 @@
 class Solution:
-    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+    def asteroidCollision(self, asteroids):
         stk = []
 
         for a in asteroids:
