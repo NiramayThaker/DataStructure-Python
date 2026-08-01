@@ -1,5 +1,5 @@
 class Solution:
-    def predictTheWinner(self, A: List[int]) -> bool:
+    def predictTheWinner(self, A) -> bool:
         n = len(A)
         if ~n & 1: return True
 
